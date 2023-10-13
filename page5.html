@@ -4,28 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Splash Website</title>
-     <link rel="stylesheet" type="text/css" href="css/style.css">
-   
+    <link rel="stylesheet" type="text/css" href="contactus.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <header class="mainheader">
-      <h3>✨Splash Logo</h3>
+        <h3>✨Splash Logo</h3>
         <nav>
-          <a href="index.html">Page 1</a>
-          <a href="page2.html">Page 2</a>
-          <a href="page3.html">Page 3</a>
-          <a href="page4.html">Page 4</a>
-          <a href="page5.html">Page 5</a>
+            <a href="index.html">Page 1</a>
+            <a href="page2.html">Page 2</a>
+            <a href="page3.html">Page 3</a>
+            <a href="page4.html">Page 4</a>
+            <a href="page5.html">Page 5</a>
         </nav>
     </header>
     <main>
-       <!-- our splash content  here -->
-       
-       <h1>Splash  Website</h1>
-        <p>This can be the main content area. Please edit code as you wish for noW  have just created a skeleton.</p>
+        <!-- our splash content  here -->
+        <h1>Splash  Website</h1>
+        <p>This can be the main content area. Please edit code as you wish for now, I have just created a skeleton.</p>
+
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="text" id="address" placeholder="Address" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="text" id="textbox" placeholder="Message" required>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="success-message" class="hidden">Message sent successfully!</div>
+        </div>
+        
+        <div id="map"></div>
     </main>
     <footer>
         &copy; 2023 Splash Website This website is created for educational purposes
     </footer>
+    <script src="script.js"></script>
 </body>
-</html> 
+
+</html>
+
