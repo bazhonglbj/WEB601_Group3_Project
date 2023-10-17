@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Website</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="register.js"></script>
+  </head>
+<body>
+    <header class="mainheader">
+      <h3>✨Splash Logo</h3>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="instructors.html">Instructors</a>
+          <a href="registration.html">Registration</a>
+          <a href="contactus.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+       <!-- our splash content  here -->
+       <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <form id="registrationForm">
+                    <h3>Registration</h3>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control check-empty" id="name" required>
+                        <div class="invalid-feedback">Please input name</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select class="form-control check-selection" id="gender" required>
+                            <option value="">Choose Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <div class="invalid-feedback">Please Choose Gender</div>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="text" class="form-control check-empty" id="email" required>
+                      <div class="invalid-feedback">Please input email</div>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" class="form-control check-empty" id="phone" required>
+                    <div class="invalid-feedback">Please input phone</div>
+                </div>
+                <div class="form-group">
+                  <label for="instructors">Instructors</label>
+                  <select class="form-control check-selection" id="instructors" required>
+                      <option value="">Choose Instructors</option>
+                      <option value="instructors">Hardik</option>
+                      <option value="instructors">Daniel</option>
+                  </select>
+                  <div class="invalid-feedback">Please Choose a instructors</div>
+                </div>
+                    <div class="form-group">
+                        <label for="course">Course</label>
+                        <select class="form-control check-selection" id="course" required>
+                            <option value="">Choose a course</option>
+                            <option value="100">Beginner - $100</option>
+                            <option value="150">Intermediate  - $150</option>
+                            <option value="200">Advanced - $200</option>
+                        </select>
+                        <div class="invalid-feedback">Please choose one of course</div>
+                    </div>
+                    <div class="form-group">
+                        <label>Amount</label>
+                        <input type="text" class="form-control" id="amount" readonly>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Payment</button>
+                </form>
+            </div>
+        </div>
+    
+        <div class="row mt-5">
+            <div class="col">
+                <h3>FAQ</h3>
+                <div class="accordion" id="faqAccordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What do I need to bring to swimming lessons?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                            <div class="card-body">
+                              You will need a suitable swimsuit, swimming cap, goggles, and a towel
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                          <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                              How to choose the right course level?
+                              </button>
+                          </h2>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                          <div class="card-body">
+                            Contat us and we will test student's level first before the lesson begin and recommend an appropriate level
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            Can I watch my child in class by the pool?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                        <div class="card-body">
+                        For the safety of students and the progress of the course, we usually do not allow parents to stay by the pool. But you can watch in designated audience areas
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFour">
+                      <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                          How to handle swimming pool cleaning and disinfection?
+                          </button>
+                      </h2>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                      <div class="card-body">
+                        Our swimming pools undergo daily chemical treatment and filtration to ensure water quality meets sanitary standards
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                        Can I take my baby to swimming lessons? What is the age limit?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+                    <div class="card-body">
+                      We offer infant swimming lessons for babies two years old and above, please make sure your baby has completed the necessary vaccinations before attending lessons
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+        &copy; 2023 Splash Website This website is created for educational purposes
+    </footer>
+</body>
+</html> 
