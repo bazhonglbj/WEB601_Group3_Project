@@ -3,7 +3,6 @@ $(document).ready(function() {
         if($(this).val() === '') {
             $(this).addClass('is-invalid');
             
-            $(this).siblings('.invalid-feedback').text($(this).data('error'));
         } else {
             $(this).removeClass('is-invalid');
         }
