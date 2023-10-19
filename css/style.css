@@ -80,3 +80,12 @@ main {
   height: 300px;
   object-fit: contain; 
 }
+
+.custom-bs-font-size {
+  font-size: 24px;
+}
+
+.custom-bs-header-size {
+  font-size: 30px;
+  font-weight: bold;
+}
