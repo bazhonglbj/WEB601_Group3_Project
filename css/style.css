@@ -98,3 +98,10 @@ main {
   text-align: left;
   display: block;
 }
+
+.card-img-top {
+  width: 400px;   
+  height: 400px; 
+  object-fit: contain;
+  display: block;
+}
